@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Rahmatul Zikra</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#dd5e91,#fad0c4);
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+
+.cv{
+    width:850px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    margin-bottom:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    animation:fade 0.7s ease;
+}
+
+@keyframes fade{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1;}
+}
+
+/* PROFILE */
+.profile{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 10px;
+}
+
+h2{
+    text-align:center;
+}
+
+.job{
+    text-align:center;
+    color:gray;
+    margin-bottom:10px;
+}
+
+/* BUTTON */
+.btn-group{
+    text-align:center;
+}
+
+.btn-group button{
+    margin:5px;
+    padding:8px 12px;
+    border:none;
+    border-radius:10px;
+    background:#ff4da6;
+    color:white;
+    cursor:pointer;
+}
+
+/* INFO */
+.info{
+    margin-top:15px;
+}
+
+.info h3{
+    margin-top:10px;
+    color:#ff4da6;
+}
+
+.info p{
+    margin:3px 0;
+}
+
+/* LINK */
+a{
+    text-decoration:none;
+    color:#ff4da6;
+}
+
+/* PROJECT */
+.project-box{
+    background:#fff0f6;
+    padding:15px;
+    border-radius:15px;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+.project-box:hover{
+    transform:scale(1.03);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.btn-project{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 15px;
+    border-radius:10px;
+    background:#ff4da6;
+    color:white;
+    text-decoration:none;
+}
+
+/* DARK MODE */
+.dark{
+    background:#121212;
+}
+
+.dark .card{
+    background:#1e1e1e;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <!-- CARD ATAS -->
+    <div class="card">
+        <!-- FIX FOTO DI SINI -->
+        <img src="foto.JPEG" class="profile">
+
+        <h2>Rahmatul Zikra</h2>
+        <p class="job">Mahasiswa Informatika</p>
+
+        <div class="btn-group">
+            <button onclick="darkMode()">🌙 Mode</button>
+            <button onclick="downloadCV()">📥 Download</button>
+        </div>
+
+        <div class="info">
+            <h3>📞 Kontak</h3>
+            <p>📧 rahmatulzikra34@gmail.com</p>
+            <p>📱 0895341950565</p>
+
+            <h3>🌐 Sosial</h3>
+            <p>
+                <!-- FIX LINK -->
+                <a href="https://www.instagram.com/_rahmatulzykra_?igsh=MTlycmJwdzhzOG9vcw==" target="_blank">📸 Instagram</a> |
+                <a href="https://www.tiktok.com/@_zykraa_?_r=1&_t=ZS-95gqxVNYH69" target="_blank">🎵 TikTok</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- TENTANG -->
+    <div class="card">
+        <h3>👤 Tentang Saya</h3>
+        <p>Saya adalah mahasiswa Teknik Informatika yang memiliki minat besar dalam dunia teknologi, khususnya di bidang pengembangan website dan desain tampilan yang modern serta interaktif. Saya senang mempelajari hal-hal baru, terutama yang berkaitan dengan coding, UI/UX design, dan pengembangan aplikasi berbasis web.
+
+Selain itu, saya juga memiliki ketertarikan di bidang kreatif seperti makeup dan estetika visual, yang membantu saya dalam menciptakan tampilan website yang menarik dan nyaman dilihat. Saya terbiasa bekerja secara mandiri maupun dalam tim, serta memiliki semangat untuk terus berkembang dan meningkatkan kemampuan diri.
+
+Dengan kemampuan yang saya miliki, saya berharap dapat menciptakan karya digital yang bermanfaat, inovatif, dan dapat digunakan oleh banyak orang, sekaligus mengembangkan karir di bidang teknologi di masa depan.</p>
+    </div>
+
+    <!-- PENDIDIKAN -->
+    <div class="card">
+        <h3>🎓 Pendidikan</h3>
+        <p>SD: SDN Calong</p>
+        <p>SMP: SMPN 2 Delima</p>
+        <p>SMA: SMAN 1 Sigli</p>
+    </div>
+
+    <!-- PROJECT -->
+    <div class="card">
+        <h3>🌐 Project Website</h3>
+
+        <div class="project-box">
+            <h4> My website</h4>
+            <p>websites i have created</p>
+
+            <a href="https://rahmatulzikra34-debug.github.io/zifuracinema/" target="_blank">
+  🚀 Open Website zifuracinema
+</a>
+
+<br>
+
+<a href="https://rahmatulzikra34-debug.github.io/project2/" target="_blank">
+  🚀 Open website project2
+</a>
+        </div>
+    </div>
+
+    <!-- HOBI -->
+    <div class="card">
+        <h3>🎬 Hobi</h3>
+        <p>Watching Movies</p>
+        <p>Travelling</p>
+        <p>Makeup & Self Beauty</p>
+    </div>
+
+    <!-- FOOD -->
+    <div class="card">
+        <h3>🍜 Favorite Food</h3>
+        <p>Mie ayam, nasi goreng, dimsum mentai, ayam bakar</p>
+    </div>
+
+    <!-- DRINK -->
+    <div class="card">
+        <h3>☕ Favorite Drink</h3>
+        <p>Coffee, matcha</p>
+    </div>
+
+    <!-- SONG -->
+    <div class="card">
+        <h3>🎵 Favorite Songs</h3>
+        <p>Risk It All, On Bended Knee, Still With You, Forever Young, So Easy</p>
+    </div>
+
+    <!-- MOVIES -->
+    <div class="card">
+        <h3>🎬 Favorite Movies</h3>
+        <p>Queen of Tears, Twenty Five Twenty One, My Demon, Duty After School, Hometown Cha-Cha-Cha</p>
+    </div>
+
+    <!-- QUOTES -->
+    <div class="card">
+        <h3>💖 Quotes</h3>
+        <p>"Mustahil Tuhan membawamu sejauh ini hanya untuk gagal"</p>
+    </div>
+
+</div>
+
+<script>
+function darkMode(){
+    document.body.classList.toggle("dark");
+}
+
+function downloadCV(){
+    window.print();
+}
+</script>
+
+</body>
+</html>
